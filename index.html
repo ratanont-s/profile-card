@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- [Delete this comment] This file is the main file for the challenge. For the most part, you should be editing this file. -->
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Profile Card | GreatFrontEnd Projects</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Tailwind CDN allows you to use Tailwind classes immediately in your HTML without any installation steps. 
+      If you're not using Tailwind, you may delete the <script> -->
+    <!-- Get started on Tailwind: https://tailwindcss.com/docs/installation/play-cdn -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="icon" href="img/favicon.ico" sizes="any" />
+    <style type="text/tailwindcss">
+      /* You may write styles inside this <style> tag or within `css/style.css`. */
+      .btn {
+        @apply rounded text-center transition focus:outline focus:outline-indigo-100 focus:outline-4 disabled:bg-neutral-100 disabled:text-neutral-400 disabled:outline-none disabled:shadow-none;
+      }
+      .btn--primary {
+        @apply bg-indigo-700 text-white  px-4 py-[10px] font-medium shadow hover:bg-indigo-800 focus:bg-indigo-800;
+      }
+      .btn--link {
+        @apply bg-white text-indigo-700 p-2 text-xl leading-none hover:bg-neutral-50 focus:bg-neutral-50 disabled:text-indigo-700;
+      }
+    </style>
+  </head>
+  <body
+    class="grid place-content-center bg-gradient-to-b from-[#F9FAFB] to-[#D2D6DB]"
+  >
+    <!-- Add your site or application content here -->
+    <div class="px-[17.5px]">
+      <div
+        class="bg-white text-neutral-600 px-4 py-6 border shadow rounded-lg max-w-[340px] flex flex-col text-center gap-y-10"
+      >
+        <div class="flex flex-col gap-y-6">
+          <img
+            src="./img/profile.png"
+            alt="Sarah Dole"
+            width="64"
+            height="64"
+            class="object-cover rounded-full self-center"
+          />
+          <div class="flex flex-col gap-y-1">
+            <h5 class="font-medium text-lg text-neutral-900">Sarah Dole</h5>
+            <h6 class="text-sm">Front End Engineer @ Microsoft</h6>
+          </div>
+          <p>
+            I turn coffee into bugs which are fixed by someone else. Certified
+            Stack Overflow and ChatGPT developer.
+          </p>
+        </div>
+        <div class="flex flex-col gap-y-6">
+          <button type="button" class="btn btn--primary">Contact me</button>
+          <nav class="flex justify-center gap-x-4">
+            <a
+              href=""
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn btn--link"
+            >
+              <i class="ri-github-fill"></i>
+            </a>
+            <a
+              href=""
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn btn--link"
+            >
+              <i class="ri-linkedin-box-fill"></i>
+            </a>
+            <a
+              href=""
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn btn--link"
+            >
+              <i class="ri-instagram-fill"></i>
+            </a>
+            <a
+              href=""
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn btn--link"
+            >
+              <i class="ri-twitter-x-fill"></i>
+            </a>
+          </nav>
+        </div>
+      </div>
+    </div>
+
+    <!-- Attribute this challenge to yourself! -->
+    <div class="credits">
+      A challenge by
+      <a
+        href="https://www.greatfrontend.com/projects?ref=challenges"
+        target="_blank"
+        >GreatFrontEnd Projects</a
+      >. Built by
+      <a href="https://www.greatfrontend.com/u/ratanont-s" target="_blank"
+        >Ratanont Sukapan</a
+      >.
+    </div>
+    <script src="js/index.js"></script>
+  </body>
+</html>
